@@ -1,17 +1,20 @@
 @import "src/utilities/sass_constants.scss";
 
 .header {
-    height: 60px;
-    background-color: $background_color;
-    border: 1px solid rgb(112, 112, 112, 0.1216);
-    .header-center {
-        height: 100%;
-        width: 100%;
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        a { 
-            font-weight: 700;
-        }
+  height: 60px;
+  background-color: $background_color;
+  border: 1px solid rgb(112, 112, 112, 0.1216);
+  position: absolute;
+  width: 100vw;
+  .header-center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    a {
+      font-weight: 700;
     }
+  }
 }

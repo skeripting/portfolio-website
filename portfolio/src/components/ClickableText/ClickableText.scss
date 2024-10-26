@@ -1,0 +1,18 @@
+@import "src/utilities/sass_constants.scss";
+
+.clickable-text {
+    font-weight: 800;
+    color: $text_color;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+    &[active='1'] {
+        font-weight: 1200;
+        background: linear-gradient(90deg, $gradient_color_1, $gradient_color_2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    &:hover {
+        filter: opacity(0.5);
+    }
+}

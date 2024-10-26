@@ -1,0 +1,8 @@
+@import "src/utilities/sass_constants.scss";
+
+.gradient-text {
+    background: linear-gradient(90deg, $gradient_color_1, $gradient_color_2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    filter: drop-shadow(0px 3px 6px #D7C4FF);
+}

@@ -1,0 +1,39 @@
+$padding: 5px;
+
+.sticker {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 6px rgb(0, 0, 0, 0.16));
+  transform: translateZ(0);
+  width: 195px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  position: absolute;
+  .sticker-content {
+    padding-top: $padding;
+    padding-left: 2 * $padding;
+    padding-right: 2 * $padding;
+    padding-bottom: 2 * $padding;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    .sticker-icon {
+      width: 174px;
+      height: 174px;
+      aspect-ratio: 1;
+      border-radius: 20px;
+    }
+    .sticker-header {
+      font-size: 18px;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .sticker-subtitle {
+      margin: 0;
+    }
+  }
+}
