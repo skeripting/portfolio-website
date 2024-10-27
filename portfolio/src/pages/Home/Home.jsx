@@ -1,3 +1,5 @@
+import ExperienceSection from "../../components/ExperienceSection/ExperienceSection";
+import GradientButton from "../../components/GradientButton/GradientButton";
 import GradientText from "../../components/GradientText/GradientText";
 import Sticker from "../../components/Sticker/Sticker";
 import "./Home.scss";
@@ -21,6 +23,10 @@ function Home() {
                 scripting, helping others bring their ideas to life and
                 empowering the next generation of developers.
               </p>
+              <div className="buttons-flex">
+                <GradientButton>Email me</GradientButton>
+                <GradientButton>View Resume</GradientButton>
+              </div>
             </div>
           </div>
           <div className="home-hero-right">
@@ -58,6 +64,9 @@ function Home() {
             ></img>
           </div>
         </div>
+
+        {/* Experience */}
+        <ExperienceSection></ExperienceSection>
       </div>
     </div>
   );

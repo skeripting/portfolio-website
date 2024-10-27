@@ -1,0 +1,35 @@
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  .experience-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 391px;
+    .tags {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .experience-title {
+      font-size: 42px;
+      margin: 0;
+    }
+    .experience-desc {
+      margin: 0;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .experience-right {
+    img {
+      width: 517px;
+      height: 285px;
+      border-radius: 10px;
+    }
+  }
+}
