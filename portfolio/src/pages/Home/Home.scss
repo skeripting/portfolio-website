@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+
     .home-hero-left {
       display: flex;
       width: auto;
@@ -49,11 +50,60 @@
         border-radius: 10px;
         filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.16));
       }
+
+      @media screen and (max-width: 1200px), (max-height: 820px) {
+        transform: scale(0.7);
+      }
+    }
+
+    @media screen and (max-width: 700px), (max-height: 700px) {
+      justify-content: flex-start;
+      .home-hero-right {
+        transform: scale(0.5);
+        .sticker {
+          display: none;
+        }
+        #Book {
+          display: none;
+        }
+      }
     }
   }
   .background-cover {
     height: 100vh;
     width: 100%;
     background-color: $background-color;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .home-flex {
+      flex-direction: column;
+      .home-hero-right {
+        #BattleManiaSticker {
+          top: 0 !important;
+          left: 75% !important;
+        }
+        #Book {
+          display: none;
+        }
+      }
+      .home-hero-left {
+        max-width: 100%;
+        width: 100%;
+        order: 1;
+        .buttons-flex {
+          justify-content: center;
+        }
+        p,
+        a,
+        h1,
+        h2,
+        h3,
+        h4 {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
   }
 }

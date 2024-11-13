@@ -36,6 +36,7 @@ function Home() {
               alt="Kushal Timsina"
             ></img>
             <Sticker
+              id="BattleManiaSticker"
               left="-25%"
               top="-25%"
               header="BattleMania"
@@ -43,6 +44,7 @@ function Home() {
               icon="/BattleManiaLogoHD.png"
             ></Sticker>
             <Sticker
+              id="QuizzySticker"
               left="-20%"
               top="80%"
               width="157px"
@@ -54,6 +56,7 @@ function Home() {
               icon="/QuizzyIconFull.png"
             ></Sticker>
             <img
+              id="Book"
               src="/bookfrontcover.jpg"
               alt="Kushal's book, Unofficial Beginner's Guide to Roblox Scripting"
               width="243px"

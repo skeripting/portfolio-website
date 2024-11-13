@@ -4,6 +4,7 @@ function Sticker(props) {
   return (
     <div
       className="sticker"
+      id={props.id}
       style={{
         left: props.left,
         top: props.top,
