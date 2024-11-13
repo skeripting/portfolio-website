@@ -26,8 +26,14 @@ jobs:
 
       - name: Deploy to deploy branch
         run: |
-          git config --global user.name "skeripting"
-          git config --global user.email "scripting1337@gmail.com"
-          git add build
+          git config --global user.name "Your GitHub Username"
+          git config --global user.email "your-email@example.com"
+          # Initialize a new git repository in the build directory
+          cd build
+          git init
+          git remote add origin https://github.com/skeripting/portfolio-website.git
+          git checkout -b deploy
+          git add .
           git commit -m "Deploy to Hostinger"
-          git push --force --set-upstream origin deploy
+          # Force push to the deploy branch on GitHub
+          git push --force origin deploy
