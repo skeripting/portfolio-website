@@ -16,6 +16,14 @@ each other. BattleMania has been played
         btnHref="https://www.roblox.com/games/14945130763/UPDATE-4-BattleMania"
       ></Experience>
       <Experience
+        tags={["React JS", "Adobe XD", "Chart.js"]}
+        name="Quizzy"
+        desc="Quizzy is my startup that aims to bring the most efficient studying methods to all students worldwide. Built on active recall and spaced repetition principles, Quizzy tracks studying analytics and uses them to optimize learning."
+        videoPath="/QuizzyScheduling.mp4"
+        btnText="See Quizzy"
+        btnHref="https://quizzynow.com"
+      ></Experience>
+      <Experience
         tags={["Lua U", "Roblox"]}
         name="Bladers: Rebirth"
         desc="I contributed as a gameplay engineer to Bladers: Rebirth, 

@@ -18,6 +18,11 @@ function Experience(props) {
       </div>
       <div className="experience-right">
         {props.video && <YoutubeEmbed embedId={props.video}></YoutubeEmbed>}
+        {props.videoPath && (
+          <video width="517" height="285" controls>
+            <source src={props.videoPath}></source>
+          </video>
+        )}
         {props.img && <img src={props.img}></img>}
       </div>
     </div>
