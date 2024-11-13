@@ -25,13 +25,12 @@ jobs:
 
       - name: Build project
         run: |
-          cd portfolio  # Ensure we are in the correct directory
+          cd portfolio  # Ensure we are in the portfolio directory
           npm run build
 
-      # Deploy only the build folder to the deploy branch
       - name: Deploy to deploy branch
         run: |
-          cd portfolio/build  # Navigate to the build directory after building
+          cd portfolio/build  # Navigate to the build directory
           git init
           git config --global user.name "skeripting"
           git config --global user.email "scripting1337@gmail.com"
@@ -39,4 +38,5 @@ jobs:
           git checkout -b deploy
           git add .
           git commit -m "Deploy to Hostinger"
-          git push --force origin deploy
+          # Use the GitHub token for authentication
+          git push --force "https://${{ secrets.GH_TOKEN }}@github.com/skeripting/portfolio-website.git" deploy
