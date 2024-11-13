@@ -28,10 +28,6 @@ jobs:
           cd portfolio  # Ensure we are in the portfolio directory
           npm run build
           
-      - name: Clean previous deployment
-        run: |
-          rm -rf .git  # Remove existing git history in the build directory
-          
       - name: Deploy to deploy branch
         run: |
           cd portfolio/build  # Navigate to the build directory
