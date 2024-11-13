@@ -1,8 +1,11 @@
-import "./ClickableText.scss"
+import "./ClickableText.scss";
 
 function ClickableText(props) {
-    return <a className="clickable-text" href="" active={props.active}>{props.text}</a>
-    
+  return (
+    <a className="clickable-text" href={props.href} active={props.active}>
+      {props.text}
+    </a>
+  );
 }
 
-export default ClickableText; 
+export default ClickableText;

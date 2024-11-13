@@ -3,7 +3,7 @@ import "./ExperienceSection.scss";
 
 function ExperienceSection() {
   return (
-    <section className="experience-section">
+    <section className="experience-section" id="experience">
       <h1>Experience</h1>
       <h4 className="check-out-my-projects">Check out my projects</h4>
       <ExperienceTimeline></ExperienceTimeline>
