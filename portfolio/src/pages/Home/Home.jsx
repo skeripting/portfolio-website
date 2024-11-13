@@ -30,7 +30,11 @@ function Home() {
             </div>
           </div>
           <div className="home-hero-right">
-            <img className="kushal-profile" src="/KushalProfile.jpg"></img>
+            <img
+              className="kushal-profile"
+              src="/KushalProfile.jpg"
+              alt="A profile picture of Kushal"
+            ></img>
             <Sticker
               left="-25%"
               top="-25%"
@@ -51,6 +55,7 @@ function Home() {
             ></Sticker>
             <img
               src="/bookfrontcover.jpg"
+              alt="A picture of Kushal's book, Unofficial Beginner's Guide to Roblox Scripting"
               width="243px"
               height="320px"
               style={{

@@ -15,6 +15,7 @@ function Sticker(props) {
         <img
           className="sticker-icon"
           src={props.icon}
+          alt={"An image of " + props.header}
           style={{ width: props.logoWidth, height: props.logoHeight }}
         ></img>
         <h5 className="sticker-header">{props.header}</h5>
