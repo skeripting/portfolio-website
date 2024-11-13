@@ -39,4 +39,5 @@ jobs:
           git add .
           git commit -m "Deploy to Hostinger"
           # Use the GitHub token for authentication
+          git push --force --delete "https://${{ secrets.GH_TOKEN }}@github.com/skeripting/portfolio-website.git" deploy || true
           git push --force "https://${{ secrets.GH_TOKEN }}@github.com/skeripting/portfolio-website.git" deploy
