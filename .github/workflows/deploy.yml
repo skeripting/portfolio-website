@@ -20,18 +20,18 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd portfolio/portfolio-website  # Change to the directory with package.json
+          cd portfolio  # Navigate to the portfolio directory
           npm install
 
       - name: Build project
         run: |
-          cd portfolio/portfolio-website  # Change to the directory with package.json
+          cd portfolio  # Ensure we are in the correct directory
           npm run build
 
-      # The following step will push only the build folder to a separate deploy branch
+      # Deploy only the build folder to the deploy branch
       - name: Deploy to deploy branch
         run: |
-          cd portfolio/portfolio-website/build  # Navigate to the build directory
+          cd portfolio/build  # Navigate to the build directory after building
           git init
           git config --global user.name "skeripting"
           git config --global user.email "scripting1337@gmail.com"
