@@ -24,8 +24,10 @@ function Home() {
                 empowering the next generation of developers.
               </p>
               <div className="buttons-flex">
-                <GradientButton>Email me</GradientButton>
-                <GradientButton>View Resume</GradientButton>
+                <GradientButton href="mailto:kushal@kushaltimsina.com">
+                  Email me
+                </GradientButton>
+                <GradientButton href="/blog">Kushal Writes</GradientButton>
               </div>
             </div>
           </div>
@@ -40,7 +42,7 @@ function Home() {
               left="-25%"
               top="-25%"
               header="BattleMania"
-              subtitle="1.3M+ Plays"
+              subtitle="1.4M+ Plays"
               icon="/BattleManiaLogoHD.png"
             ></Sticker>
             <Sticker
