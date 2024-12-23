@@ -1,9 +1,5 @@
-import ExperienceSection from "../../components/ExperienceSection/ExperienceSection";
 import GradientButton from "../../components/GradientButton/GradientButton";
-import GradientText from "../../components/GradientText/GradientText";
 import InfoBlock from "../../components/InfoBlock/InfoBlock";
-import Sticker from "../../components/Sticker/Sticker";
-
 import "./Book.scss";
 
 function Book() {
