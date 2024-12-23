@@ -10,7 +10,7 @@ function ExperienceTimeline() {
         desc="BattleMania is my Roblox battle simulation game,
 where you can select troops and fight them against
 each other. BattleMania has been played 
-1.2 million times worldwide."
+1.4 million times worldwide."
         video="C8CNkBzbN_Y"
         btnText="Play BattleMania"
         btnHref="https://www.roblox.com/games/14945130763/UPDATE-4-BattleMania"
@@ -27,7 +27,7 @@ each other. BattleMania has been played
         tags={["Lua U", "Roblox"]}
         name="Bladers: Rebirth"
         desc="I contributed as a gameplay engineer to Bladers: Rebirth, 
-a Roblox Beyblade game with 30+ million visits. 
+a Roblox Beyblade game with 40+ million visits. 
 My work included developing a Quest system, 
 adding interactive trainers to enhance immersion, 
 and fixing critical bugs to improve overall gameplay experience."

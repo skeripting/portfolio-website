@@ -67,7 +67,6 @@ function Home() {
                 borderRadius: "20px",
                 position: "absolute",
                 left: "65%",
-                top: "70%",
                 filter: "drop-shadow(0px 3px 6px rgb(0, 0, 0, 0.16))",
                 transform: "translateZ(0)",
               }}

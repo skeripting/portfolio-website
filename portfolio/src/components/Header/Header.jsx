@@ -7,6 +7,7 @@ function Header() {
       <div className="header-center">
         <ClickableText text="Home" active="1" href="/"></ClickableText>
         <ClickableText text="Experience" href="/#experience"></ClickableText>
+        <ClickableText text="Book" href="/book"></ClickableText>
         {/*<ClickableText text="Contact" href="/contact"></ClickableText>
         <ClickableText text="Articles" href="/articles"></ClickableText>*/}
       </div>
