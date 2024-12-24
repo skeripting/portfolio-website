@@ -9,7 +9,7 @@ function Book() {
         <div className="home-flex">
           <div className="home-hero-left">
             <h4 className="hello-text">The Beginner's Guide to</h4>
-            <div className="im-kushal-cover">
+            <div className="book-left-cover">
               <h1>Roblox Scripting Book</h1>
               <p>
                 If you've ever dreamt of scripting your own games, The
