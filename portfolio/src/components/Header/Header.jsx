@@ -17,7 +17,7 @@ function Header() {
         <ClickableText
           text="Experience"
           active={location.hash === "#experience" ? "1" : "0"}
-          href="/#experience"
+          href="/experience"
         ></ClickableText>
         <ClickableText
           text="Book"
