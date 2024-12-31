@@ -4,7 +4,11 @@ function ExperienceGrid() {
   return (
     <section className="experience-grid" id="experience-grid">
       <div className="individual-experience">
-        <img src="BattleManiaThumbnail.png" className="experience-img"></img>
+        <img
+          src="BattleManiaThumbnail.png"
+          className="experience-img"
+          alt="Thumbnail of BattleMania, a Roblox battle simulation game"
+        />
         <p className="experience-date">Since August 2023, 1.4M+ visits</p>
         <h2 className="individual-experience-name">BattleMania</h2>
         <p className="about-experience">
@@ -14,7 +18,11 @@ function ExperienceGrid() {
         </p>
       </div>
       <div className="individual-experience">
-        <img src="BladersRebirth.png" className="experience-img"></img>
+        <img
+          src="BladersRebirth.png"
+          className="experience-img"
+          alt="Thumbnail of Bladers: Rebirth, a Roblox Beyblade game"
+        />
         <p className="experience-date">May 2024 - November 2024, 40M+ visits</p>
         <h2 className="individual-experience-name">Bladers: Rebirth</h2>
         <p className="about-experience">
@@ -28,7 +36,8 @@ function ExperienceGrid() {
         <img
           src="book_pic_cropped_for_experience.png"
           className="experience-img"
-        ></img>
+          alt="Cover of Beginner's Guide to Roblox Scripting book"
+        />
         <p className="experience-date">Since Summer 2023</p>
         <h2 className="individual-experience-name">
           Beginner's Guide to Roblox Scripting
@@ -40,7 +49,11 @@ function ExperienceGrid() {
         </p>
       </div>
       <div className="individual-experience">
-        <img src="scriptingYoutube.png" className="experience-img"></img>
+        <img
+          src="scriptingYoutube.png"
+          className="experience-img"
+          alt="Logo of script_ing YouTube channel"
+        />
         <p className="experience-date">Since 2016, 940K+ lifetime views</p>
         <h2 className="individual-experience-name">script_ing YouTube</h2>
         <p className="about-experience">
@@ -50,7 +63,11 @@ function ExperienceGrid() {
         </p>
       </div>
       <div className="individual-experience">
-        <img src="vampireSystem.png" className="experience-img"></img>
+        <img
+          src="vampireSystem.png"
+          className="experience-img"
+          alt="Demonstration of a vampire system in Roblox"
+        />
         <p className="experience-date">November 2024-2025</p>
         <h2 className="individual-experience-name">Vampire System</h2>
         <p className="about-experience">
@@ -60,7 +77,11 @@ function ExperienceGrid() {
         </p>
       </div>
       <div className="individual-experience">
-        <img src="horrorGame.png" className="experience-img"></img>
+        <img
+          src="horrorGame.png"
+          className="experience-img"
+          alt="Screenshot of a horror game system demo"
+        />
         <p className="experience-date">August 2024</p>
         <h2 className="individual-experience-name">Horror Game</h2>
         <p className="about-experience">
@@ -71,7 +92,11 @@ function ExperienceGrid() {
         </p>
       </div>
       <div className="individual-experience">
-        <img src="gunsystem.png" className="experience-img"></img>
+        <img
+          src="gunsystem.png"
+          className="experience-img"
+          alt="Screenshot of a 3rd person gun system in Roblox"
+        />
         <p className="experience-date">January 2023 - March 2024</p>
         <h2 className="individual-experience-name">LEVGRU Gun System</h2>
         <p className="about-experience">
