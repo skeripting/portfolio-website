@@ -1,6 +1,5 @@
 import ExperienceGrid from "../../components/ExperienceGrid/ExperienceGrid";
 import GradientButton from "../../components/GradientButton/GradientButton";
-import InfoBlock from "../../components/InfoBlock/InfoBlock";
 import "./Experience.scss";
 
 function Experience() {
