@@ -16,13 +16,22 @@ function Header() {
         ></ClickableText>
         <ClickableText
           text="Experience"
-          active={location.hash === "#experience" ? "1" : "0"}
+          active={
+            location.pathname === "/" && location.hash === "#experience"
+              ? "1"
+              : "0"
+          }
           href="/experience"
         ></ClickableText>
         <ClickableText
           text="Book"
           active={location.pathname === "/book" ? "1" : "0"}
           href="/book"
+        ></ClickableText>
+        <ClickableText
+          text="Blog"
+          active={location.hash === "/blog" ? "1" : "0"}
+          href="/blog"
         ></ClickableText>
       </div>
     </div>
