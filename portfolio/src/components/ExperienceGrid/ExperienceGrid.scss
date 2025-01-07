@@ -22,7 +22,9 @@
     margin-top: 1rem;
   }
 
-  .experience-img {
+  .experience-img,
+  video,
+  .video-responsive {
     width: 337px; /* Set fixed width */
     height: 223px; /* Set fixed height */
     object-fit: cover; /* Ensure images fit nicely without distortion */
