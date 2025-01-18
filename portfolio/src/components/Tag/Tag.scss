@@ -13,4 +13,19 @@ $tag_text_color: #a172ff;
   width: auto;
   text-align: center;
   text-wrap: nowrap;
+  &.clickable {
+    cursor: pointer;
+    transition: all 0.15s;
+    &:hover {
+      background: $tag_background_color;
+      color: $tag_text_color;
+      border: 1px solid #a172ff;
+      transform: translateY(-5px);
+    }
+  }
+  &.inactive {
+    background-color: #e4e4e4;
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a;
+  }
 }

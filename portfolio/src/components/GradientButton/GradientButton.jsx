@@ -4,6 +4,7 @@ function GradientButton(props) {
     <button
       className="gradient-button"
       href={props.href}
+      style={props.style}
       onClick={() => {
         window.location.href = props.href;
       }}

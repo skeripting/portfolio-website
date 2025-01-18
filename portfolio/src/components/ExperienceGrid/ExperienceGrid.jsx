@@ -1,177 +1,245 @@
+import React, { useState } from "react";
+import Tag from "../Tag/Tag";
 import YoutubeEmbed from "../YouTubeEmbed/YouTubeEmbed";
 import "./ExperienceGrid.scss";
+import GradientButton from "../GradientButton/GradientButton";
+
+// This is our "dictionary" storing all experiences.
+// Each key is a unique name or ID for the experience.
+// Each experience has a "tag" property, among others.
+const experienceData = {
+  battleMania: {
+    tag: "Roblox",
+    image: "BattleManiaThumbnail.png",
+    date: "Since August 2023, 1.4M+ visits",
+    title: "BattleMania",
+    description:
+      "BattleMania is my Roblox battle simulation game, where you can select troops and fight them against each other. There are over 70 obtainable troops in the game.",
+    embedId: null,
+  },
+  bladersRebirth: {
+    tag: "Roblox",
+    image: "BladersRebirth.png",
+    date: "May 2024 - November 2024, 40M+ visits",
+    title: "Bladers: Rebirth",
+    description:
+      "I contributed as a gameplay engineer to Bladers: Rebirth, a Roblox Beyblade game with 40+ million visits...",
+    embedId: null,
+  },
+  beginnersGuide: {
+    tag: "Roblox",
+    image: "book_pic_cropped_for_experience.png",
+    date: "Since Summer 2023",
+    title: "Beginner's Guide to Roblox Scripting",
+    description:
+      "I authored a book to help new scripters learn Roblox scripting...",
+    embedId: null,
+  },
+  scriptingYouTube: {
+    tag: "Roblox",
+    image: "scriptingYoutube.png",
+    date: "Since 2016, 950K+ lifetime views",
+    title: "script_ing YouTube",
+    description:
+      "Since I was very little, I wanted to learn Roblox scripting and teach it to the world...",
+    embedId: null,
+  },
+  vampireSystem: {
+    tag: "Roblox",
+    image: null,
+    date: "November 2024-2025",
+    title: "Vampire System",
+    description:
+      "I had the pleasure of working on a vampire system for a client, where a player may transform into a vampire, bite targets, and drag them...",
+    embedId: "d-wZW8-sdXQ",
+  },
+  horrorGame: {
+    tag: "Roblox",
+    image: null,
+    date: "August 2024",
+    title: "Horror Game",
+    description:
+      "A client reached out, asking me to script a horror game system...",
+    embedId: "aLpLOlnklIw",
+  },
+  corruptedHorrorGame1: {
+    tag: "Roblox",
+    image: null,
+    date: "December 2023",
+    title: "Corrupted Horror Game",
+    description:
+      "I scripted horror entities with AI pathfinding and state management. The horror entity (analog 1) can also open doors by itself.",
+    embedId: "2b0svwndeEE",
+  },
+  corruptedHorrorGame2: {
+    tag: "Roblox",
+    image: null,
+    date: "December 2023",
+    title: "Corrupted Horror Game (Door Opening)",
+    description:
+      "I scripted horror entities with AI pathfinding and state management. The horror entity (analog 1) transforms if and only if the victim is alone.",
+    embedId: "JAYGXzlaD80",
+  },
+  levgruGrenades: {
+    tag: "Roblox",
+    image: null,
+    date: "January 2023 - March 2024",
+    title: "LEVGRU Gun System (Grenades)",
+    description:
+      "As an addendum to the gun system commission, I scripted different types of grenades, with intricate mechanics...",
+    embedId: "CYqRAwgR8nI",
+  },
+  levgruGunSystem: {
+    tag: "Roblox",
+    image: null,
+    date: "January 2023 - March 2024",
+    title: "LEVGRU Gun System",
+    description:
+      "I worked closely with a client for over 1 year on a 3rd person intricate gun system...",
+    embedId: "fPXAqMBkumQ",
+  },
+  elementalAdventures: {
+    tag: "Roblox",
+    image: null,
+    date: "2019-2021",
+    title: "Elemental Adventures",
+    description:
+      "Determined to continue to create a really awesome turn-based RPG game on Roblox...",
+    embedId: "XHEqeYcdFWY",
+  },
+  pokemonZygarde: {
+    tag: "Roblox",
+    image: null,
+    date: "2017-2018",
+    title: "Pokemon: Creation of Zygarde",
+    description:
+      "I was the founder and owner of a game called Pokemon: Creation of Zygarde...",
+    embedId: "cjitqVwvE0M",
+  },
+  dragonBallBeyond: {
+    tag: "Roblox",
+    image: null,
+    date: "November 2016",
+    title: "Dragon Ball: Beyond Evolution",
+    description:
+      "Dragon Ball: Beyond Evolution was my first game that I created when I was 12 years old in 2016...",
+    embedId: "6zmakChYH2w",
+  },
+  quizzy: {
+    tag: "Web Development",
+    image: "QuizzyHomepage.png",
+    date: "November 2022 - Present",
+    title: "Quizzy",
+    description:
+      "I created Quizzy over several years, a web app that brings the latest studying techniques to students in order to help them get their best grades.",
+    embedId: null,
+    href: "quizzynow.com",
+    hrefText: "See Quizzy",
+  },
+  quizzyCreateSet: {
+    tag: "Web Development",
+    videoPath:
+      "https://quizzynow.com/uploads/demonstration_videos/CreateSet.mp4",
+    date: "November 2022 - Present",
+    title: "Quizzy - Set Creation",
+    description:
+      "Quizzy's Create Study Set system allows students to create flashcards with ease.",
+    embedId: null,
+    href: "quizzynow.com",
+    hrefText: "See Quizzy",
+  },
+  quizzyScheduling: {
+    tag: "Web Development",
+    videoPath: "QuizzyScheduling.mp4",
+    date: "November 2022 - Present",
+    title: "Quizzy - Scheduling",
+    description:
+      "I created a scheduling system for Quizzy that automatically reminds students when to study, based on their preferences and their test date.",
+    embedId: null,
+    href: "quizzynow.com",
+    hrefText: "See Quizzy",
+  },
+  quizzyQuizzes: {
+    tag: "Web Development",
+    videoPath:
+      "https://quizzynow.com/uploads/demonstration_videos/QuizzyFullQuiz.mp4",
+    date: "November 2022 - Present",
+    title: "Quizzy - Quizzes",
+    description:
+      "Quizzy features timed practice quizzes that save your progress and time, even after you close the tab.",
+    embedId: null,
+    href: "quizzynow.com",
+    hrefText: "See Quizzy",
+  },
+};
 
 function ExperienceGrid() {
+  // selectedTag = what the user clicked on; defaults to "Roblox"
+  const [selectedTag, setSelectedTag] = useState("Roblox");
+
+  // Convert dictionary values into an array and filter by tag
+  const filteredExperiences = Object.values(experienceData).filter(
+    (exp) => exp.tag === selectedTag
+  );
+
+  // Click handlers for the tags
+  const handleRobloxClick = () => {
+    setSelectedTag("Roblox");
+  };
+
+  const handleWebDevClick = () => {
+    setSelectedTag("Web Development");
+  };
+
   return (
-    <section className="experience-grid" id="experience-grid">
-      <div className="individual-experience">
-        <img
-          src="BattleManiaThumbnail.png"
-          className="experience-img"
-          alt="Thumbnail of BattleMania, a Roblox battle simulation game"
-        />
-        <p className="experience-date">Since August 2023, 1.4M+ visits</p>
-        <h2 className="individual-experience-name">BattleMania</h2>
-        <p className="about-experience">
-          BattleMania is my Roblox battle simulation game, where you can select
-          troops and fight them against each other. There are over 70 obtainable
-          troops in the game.
-        </p>
+    <>
+      <div className="filter-menu">
+        <p>Filter</p>
+        <div className="tags">
+          {/* If the user is on 'Roblox' tag, let's remove inactive styling, etc. */}
+          <Tag
+            clickable
+            inactive={selectedTag !== "Roblox"}
+            onClick={handleRobloxClick}
+          >
+            Roblox
+          </Tag>
+
+          <Tag
+            clickable
+            inactive={selectedTag !== "Web Development"}
+            onClick={handleWebDevClick}
+          >
+            Web Development
+          </Tag>
+        </div>
       </div>
-      <div className="individual-experience">
-        <img
-          src="BladersRebirth.png"
-          className="experience-img"
-          alt="Thumbnail of Bladers: Rebirth, a Roblox Beyblade game"
-        />
-        <p className="experience-date">May 2024 - November 2024, 40M+ visits</p>
-        <h2 className="individual-experience-name">Bladers: Rebirth</h2>
-        <p className="about-experience">
-          I contributed as a gameplay engineer to Bladers: Rebirth, a Roblox
-          Beyblade game with 40+ million visits. My work included developing a
-          Quest system, adding interactive trainers to enhance immersion, and
-          fixing critical bugs to improve overall gameplay experience.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <img
-          src="book_pic_cropped_for_experience.png"
-          className="experience-img"
-          alt="Cover of Beginner's Guide to Roblox Scripting book"
-        />
-        <p className="experience-date">Since Summer 2023</p>
-        <h2 className="individual-experience-name">
-          Beginner's Guide to Roblox Scripting
-        </h2>
-        <p className="about-experience">
-          I authored a book to help new scripters learn Roblox scripting. The
-          book has learning exercises, vocabulary lists, quizzes, and tips on
-          how to remember scripting related concepts.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <img
-          src="scriptingYoutube.png"
-          className="experience-img"
-          alt="Logo of script_ing YouTube channel"
-        />
-        <p className="experience-date">Since 2016, 950K+ lifetime views</p>
-        <h2 className="individual-experience-name">script_ing YouTube</h2>
-        <p className="about-experience">
-          Since I was very little, I wanted to learn Roblox scripting and teach
-          it to the world. So, I started a channel, where I share my knowledge
-          for free, contributing to the growth of new and existing Roblox games.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"d-wZW8-sdXQ"}></YoutubeEmbed>
-        <p className="experience-date">November 2024-2025</p>
-        <h2 className="individual-experience-name">Vampire System</h2>
-        <p className="about-experience">
-          I had the pleasure of working on a vampire system for a client, where
-          a player may transform into a vampire, bite targets, and drag them, as
-          their health gets sapped out. The target may struggle out of the bite.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"aLpLOlnklIw"}></YoutubeEmbed>
-        <p className="experience-date">August 2024</p>
-        <h2 className="individual-experience-name">Horror Game</h2>
-        <p className="about-experience">
-          A client reached out, asking me to script a horror game system, where
-          entities are alerted according to the volume of players using the
-          Roblox voice chat. Within a few days, I had this demo prepared. It was
-          lots of fun to code!
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"2b0svwndeEE"}></YoutubeEmbed>{" "}
-        <p className="experience-date">December 2023</p>
-        <h2 className="individual-experience-name">Corrupted Horror Game</h2>
-        <p className="about-experience">
-          I scripted horror entities with AI pathfinding and state management.
-          The horror entity (analog 1) can also open doors by itself.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"JAYGXzlaD80"}></YoutubeEmbed>{" "}
-        <p className="experience-date">December 2023</p>
-        <h2 className="individual-experience-name">
-          Corrupted Horror Game (Door Opening)
-        </h2>
-        <p className="about-experience">
-          I scripted horror entities with AI pathfinding and state management.
-          The horror entity (analog 1) transforms if and only if the victim is
-          alone.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"CYqRAwgR8nI"}></YoutubeEmbed>
-        <p className="experience-date">January 2023 - March 2024</p>
-        <h2 className="individual-experience-name">
-          LEVGRU Gun System (Grenades)
-        </h2>
-        <p className="about-experience">
-          As an addendum to the gun system commission, I scripted different
-          types of grenades, with intricate mechanics, such as pre-emptively
-          cooking the grenade before the explosion.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"fPXAqMBkumQ"}></YoutubeEmbed>
-        <p className="experience-date">January 2023 - March 2024</p>
-        <h2 className="individual-experience-name">LEVGRU Gun System</h2>
-        <p className="about-experience">
-          I worked closely with a client for over 1 year on a 3rd person
-          intricate gun system, that supports mechanics such as combat diving,
-          heat sensing scopes, gun recoil, fall damage, and much more.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"XHEqeYcdFWY"}></YoutubeEmbed>
-        <p className="experience-date">2019-2021</p>
-        <h2 className="individual-experience-name">Elemental Adventures</h2>
-        <p className="about-experience">
-          Determined to continue to create a really awesome turn-based RPG game
-          on Roblox, I began Elemental Adventures, a project that continued for
-          2+ years before I put it in hiatus to focus on my studies. Elemental
-          Adventures is a turn-based RPG game, which aims to blend Pokemon, AQW,
-          Wizard101, and Avatar together.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"cjitqVwvE0M"}></YoutubeEmbed>
-        <p className="experience-date">2017-2018</p>
-        <h2 className="individual-experience-name">
-          Pokemon: Creation of Zygarde
-        </h2>
-        <p className="about-experience">
-          I was the founder and owner of a game called Pokemon: Creation of
-          Zygarde, which aimed to bring animated 3D models of Pokemon to the
-          platform. At the time, the best Pokemon rendering technology on Roblox
-          was with animated sprites. I was the solo scripter of the entire
-          project, supported by 100,000+ people, which was never released, due
-          to copyright issues. I was 14 years old at the time. To achieve
-          animated meshes in Roblox, which didn't support mesh deformation at
-          the time, I used a frame by frame mesh rendering method, where we'd
-          split the animation into frames, and manipulate them in Roblox using
-          CFrames.
-        </p>
-      </div>
-      <div className="individual-experience">
-        <YoutubeEmbed embedId={"6zmakChYH2w"}></YoutubeEmbed>
-        <p className="experience-date">November 2016</p>
-        <h2 className="individual-experience-name">
-          Dragon Ball: Beyond Evolution
-        </h2>
-        <p className="about-experience">
-          Dragon Ball: Beyond Evolution was my first game that I created when I
-          was 12 years old in 2016, complete with a power level system, flying,
-          health bars, transformations, and combat. I had been learning
-          scripting for a few months, and I put it all to use.
-        </p>
-      </div>
-    </section>
+
+      <section className="experience-grid" id="experience-grid">
+        {filteredExperiences.map((exp, idx) => (
+          <div className="individual-experience" key={idx}>
+            {/* If there's an embedId, show the YoutubeEmbed; else show an image */}
+            {exp.embedId && <YoutubeEmbed embedId={exp.embedId} />}
+            {exp.image && (
+              <img src={exp.image} className="experience-img" alt={exp.title} />
+            )}
+            {exp.videoPath && (
+              <video alt={"A video of " + exp.name} controls>
+                <source src={exp.videoPath}></source>
+              </video>
+            )}
+            <p className="experience-date">{exp.date}</p>
+            <h2 className="individual-experience-name">{exp.title}</h2>
+            <p className="about-experience">{exp.description}</p>
+            {exp.href && (
+              <GradientButton href={exp.href} style={{ marginTop: "1rem" }}>
+                {exp.hrefText}
+              </GradientButton>
+            )}
+          </div>
+        ))}
+      </section>
+    </>
   );
 }
 
