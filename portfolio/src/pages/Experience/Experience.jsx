@@ -11,7 +11,7 @@ function Experience() {
           <h1>My Experience</h1>
           <img
             className="kushal-profile"
-            src="/KushalProfile3.png"
+            src="/instagramPhoto.jpg"
             alt="Kushal Timsina"
           ></img>
           <h4 className="hello-text">Kushal Timsina</h4>

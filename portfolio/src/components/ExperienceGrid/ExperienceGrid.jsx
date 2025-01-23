@@ -16,15 +16,19 @@ const experienceData = {
     description:
       "BattleMania is my Roblox battle simulation game, where you can select troops and fight them against each other. There are over 70 obtainable troops in the game.",
     embedId: null,
+    href: "https://www.roblox.com/games/14945130763/BattleMania",
+    hrefText: "Play BattleMania",
   },
   bladersRebirth: {
     tag: "Roblox",
     image: "BladersRebirth.png",
-    date: "May 2024 - November 2024, 40M+ visits",
+    date: "May 2024 - November 2024, 45M+ visits",
     title: "Bladers: Rebirth",
     description:
-      "I contributed as a gameplay engineer to Bladers: Rebirth, a Roblox Beyblade game with 40+ million visits...",
+      "I contributed as a gameplay engineer to Bladers: Rebirth, a Roblox Beyblade game with 40+ million visits. My work included developing a Quest system, adding interactive trainers to enhance immersion, and fixing critical bugs to improve overall gameplay experience.",
     embedId: null,
+    href: "https://www.roblox.com/games/15423741735/UPD-8-Bladers-Rebirth",
+    hrefText: "Play Bladers: Rebirth",
   },
   beginnersGuide: {
     tag: "Roblox",
@@ -32,7 +36,7 @@ const experienceData = {
     date: "Since Summer 2023",
     title: "Beginner's Guide to Roblox Scripting",
     description:
-      "I authored a book to help new scripters learn Roblox scripting...",
+      "I authored a book to help new scripters learn Roblox scripting. The book has learning exercises, vocabulary lists, quizzes, and tips on how to remember scripting related concepts.",
     embedId: null,
   },
   scriptingYouTube: {
@@ -41,7 +45,7 @@ const experienceData = {
     date: "Since 2016, 950K+ lifetime views",
     title: "script_ing YouTube",
     description:
-      "Since I was very little, I wanted to learn Roblox scripting and teach it to the world...",
+      "Since I was very little, I wanted to learn Roblox scripting and teach it to the world. So, I started a channel, where I share my knowledge for free, contributing to the growth of new and existing Roblox games.",
     embedId: null,
   },
   vampireSystem: {
@@ -50,7 +54,7 @@ const experienceData = {
     date: "November 2024-2025",
     title: "Vampire System",
     description:
-      "I had the pleasure of working on a vampire system for a client, where a player may transform into a vampire, bite targets, and drag them...",
+      "I had the pleasure of working on a vampire system for a client, where a player may transform into a vampire, bite targets, and drag them, as their health gets sapped out. The target may struggle out of the bite.",
     embedId: "d-wZW8-sdXQ",
   },
   horrorGame: {
@@ -59,7 +63,7 @@ const experienceData = {
     date: "August 2024",
     title: "Horror Game",
     description:
-      "A client reached out, asking me to script a horror game system...",
+      "A client reached out, asking me to script a horror game system, where entities are alerted according to the volume of players using the Roblox voice chat. Within a few days, I had this demo prepared. It was lots of fun to code!",
     embedId: "aLpLOlnklIw",
   },
   corruptedHorrorGame1: {
@@ -86,7 +90,7 @@ const experienceData = {
     date: "January 2023 - March 2024",
     title: "LEVGRU Gun System (Grenades)",
     description:
-      "As an addendum to the gun system commission, I scripted different types of grenades, with intricate mechanics...",
+      "As an addendum to the gun system commission, I scripted different types of grenades, with intricate mechanics, such as pre-emptively cooking the grenade before the explosion.",
     embedId: "CYqRAwgR8nI",
   },
   levgruGunSystem: {
@@ -95,7 +99,7 @@ const experienceData = {
     date: "January 2023 - March 2024",
     title: "LEVGRU Gun System",
     description:
-      "I worked closely with a client for over 1 year on a 3rd person intricate gun system...",
+      "I worked closely with a client for over 1 year on a 3rd person intricate gun system, that supports mechanics such as combat diving, heat sensing scopes, gun recoil, fall damage, and much more.",
     embedId: "fPXAqMBkumQ",
   },
   elementalAdventures: {
@@ -104,7 +108,7 @@ const experienceData = {
     date: "2019-2021",
     title: "Elemental Adventures",
     description:
-      "Determined to continue to create a really awesome turn-based RPG game on Roblox...",
+      "Determined to continue to create a really awesome turn-based RPG game on Roblox, I began Elemental Adventures, a project that continued for 2+ years before I put it in hiatus to focus on my studies. Elemental Adventures is a turn-based RPG game, which aims to blend Pokemon, AQW, Wizard101, and Avatar together.",
     embedId: "XHEqeYcdFWY",
   },
   pokemonZygarde: {
@@ -113,7 +117,7 @@ const experienceData = {
     date: "2017-2018",
     title: "Pokemon: Creation of Zygarde",
     description:
-      "I was the founder and owner of a game called Pokemon: Creation of Zygarde...",
+      "I was the founder and owner of a game called Pokemon: Creation of Zygarde, which aimed to bring animated 3D models of Pokemon to the platform. At the time, the best Pokemon rendering technology on Roblox was with animated sprites. I was the solo scripter of the entire project, supported by 100,000+ people, which was never released, due to copyright issues. I was 14 years old at the time. To achieve animated meshes in Roblox, which didn't support mesh deformation at the time, I used a frame by frame mesh rendering method, where we'd split the animation into frames, and manipulate them in Roblox using CFrames.",
     embedId: "cjitqVwvE0M",
   },
   dragonBallBeyond: {
@@ -122,8 +126,17 @@ const experienceData = {
     date: "November 2016",
     title: "Dragon Ball: Beyond Evolution",
     description:
-      "Dragon Ball: Beyond Evolution was my first game that I created when I was 12 years old in 2016...",
+      "Dragon Ball: Beyond Evolution was my first game that I created when I was 12 years old in 2016, complete with a power level system, flying, health bars, transformations, and combat. I had been learning scripting for a few months, and I put it all to use.",
     embedId: "6zmakChYH2w",
+  },
+  portfolio: {
+    tag: "Web Development",
+    image: "portfolioHero.png",
+    date: "November 2024 - Present",
+    title: "Portfolio",
+    description:
+      "I created this website using React JS for the frontend. I used Figma to design it.",
+    embedId: null,
   },
   quizzy: {
     tag: "Web Development",
@@ -171,6 +184,25 @@ const experienceData = {
     href: "quizzynow.com",
     hrefText: "See Quizzy",
   },
+  automatedSecuritySystem: {
+    tag: "C",
+    image: "automatedSecuritySystem.png",
+    date: "April 2023 - May 2023",
+    title: "Automated Security System",
+    description:
+      "Our final project for Programming Embedded Microcontrollers was an automated security system, developed in C with approximately 4,000 lines of code. The system featured an RFID scanner to read keycards, sensors to detect abnormal light levels (such as intruders using flashlights), object proximity detection, alarm activation, and tampering detection using an accelerometer.",
+    embedId: null,
+    href: "https://www.linkedin.com/in/kushal-timsina/details/education/897559412/multiple-media-viewer/?profileId=ACoAADLVZooBleQJ4yZfY73zvMEew12dJF2TJ3k&treasuryMediaId=1635545203290",
+    hrefText: "See the Documentation",
+  },
+  rcCar: {
+    tag: "Python",
+    date: "November 2023 - December 2024",
+    title: "Remote Controlled Racecar",
+    description:
+      "Our final project for our Operating Systems class was an RC car that drove itself. The car had two modes: Manual and Automated. In Manual mode, the car would open up a web server, and you'd be able to control it right from your phone. In Automatic mode, it would follow a black tape path and intelligently avoid obstacles with an ultraviolet sensor.",
+    embedId: "hezVsyBzr60",
+  },
 };
 
 function ExperienceGrid() {
@@ -189,6 +221,14 @@ function ExperienceGrid() {
 
   const handleWebDevClick = () => {
     setSelectedTag("Web Development");
+  };
+
+  const handleCClick = () => {
+    setSelectedTag("C");
+  };
+
+  const handlePythonClick = () => {
+    setSelectedTag("Python");
   };
 
   return (
@@ -211,6 +251,18 @@ function ExperienceGrid() {
             onClick={handleWebDevClick}
           >
             Web Development
+          </Tag>
+
+          <Tag clickable inactive={selectedTag !== "C"} onClick={handleCClick}>
+            C
+          </Tag>
+
+          <Tag
+            clickable
+            inactive={selectedTag !== "Python"}
+            onClick={handlePythonClick}
+          >
+            Python
           </Tag>
         </div>
       </div>
