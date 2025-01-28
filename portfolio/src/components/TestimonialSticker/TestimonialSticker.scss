@@ -1,0 +1,9 @@
+.testimonial-sticker-absolute {
+  @media screen and (max-width: 1560px) {
+    display: none;
+  }
+}
+
+.testimonial-sticker-relative {
+  min-width: 0px !important;
+}

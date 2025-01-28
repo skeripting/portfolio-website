@@ -9,11 +9,13 @@ const InfoBlock = ({
   imageSrc,
   imageOnLeft,
   buttonHref,
+  testimonial,
 }) => {
   return (
     <div className={`info-block ${imageOnLeft ? "image-left" : "image-right"}`}>
       {imageOnLeft && <img src={imageSrc} alt={title} className="info-image" />}
       <div className="info-content">
+        {testimonial}
         <h2>{title}</h2>
         <p>{text}</p>
         <GradientButton className="cta-button" href={buttonHref}>

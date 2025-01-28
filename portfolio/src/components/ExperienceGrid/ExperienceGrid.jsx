@@ -3,6 +3,7 @@ import Tag from "../Tag/Tag";
 import YoutubeEmbed from "../YouTubeEmbed/YouTubeEmbed";
 import "./ExperienceGrid.scss";
 import GradientButton from "../GradientButton/GradientButton";
+import TestimonialSticker from "../TestimonialSticker/TestimonialSticker";
 
 // This is our "dictionary" storing all experiences.
 // Each key is a unique name or ID for the experience.
@@ -47,6 +48,11 @@ const experienceData = {
     description:
       "Since I was very little, I wanted to learn Roblox scripting and teach it to the world. So, I started a channel, where I share my knowledge for free, contributing to the growth of new and existing Roblox games.",
     embedId: null,
+  },
+  vampireTestimonial: {
+    tag: "Roblox",
+    testimonial:
+      '"I really love how it looks so far! Definitely like exact mechanic I had in mind"',
   },
   vampireSystem: {
     tag: "Roblox",
@@ -101,6 +107,11 @@ const experienceData = {
     description:
       "I worked closely with a client for over 1 year on a 3rd person intricate gun system, that supports mechanics such as combat diving, heat sensing scopes, gun recoil, fall damage, and much more.",
     embedId: "fPXAqMBkumQ",
+  },
+  levgruGunSystemTestimonial: {
+    tag: "Roblox",
+    testimonial:
+      "Thank you so much for these updates, not only do they look really impressive but I can see that you're also being very thorough which makes me super happy.",
   },
   elementalAdventures: {
     tag: "Roblox",
@@ -271,6 +282,13 @@ function ExperienceGrid() {
         {filteredExperiences.map((exp, idx) => (
           <div className="individual-experience" key={idx}>
             {/* If there's an embedId, show the YoutubeEmbed; else show an image */}
+            {exp.testimonial && (
+              <TestimonialSticker
+                subtitle={exp.testimonial}
+                author="Client"
+                isRelative
+              ></TestimonialSticker>
+            )}
             {exp.embedId && <YoutubeEmbed embedId={exp.embedId} />}
             {exp.image && (
               <img src={exp.image} className="experience-img" alt={exp.title} />

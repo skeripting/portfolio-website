@@ -1,5 +1,6 @@
 import GradientButton from "../../components/GradientButton/GradientButton";
 import InfoBlock from "../../components/InfoBlock/InfoBlock";
+import TestimonialSticker from "../../components/TestimonialSticker/TestimonialSticker";
 import "./Book.scss";
 
 function Book() {
@@ -22,13 +23,21 @@ function Book() {
                 scripting simple and enjoyable.
               </p>
               <div className="buttons-flex">
-                <GradientButton href="#">Take a peek</GradientButton>
+                <GradientButton href="https://kushaltimsina.com/book/BeginnersGuideToScriptingPreview.pdf">
+                  Take a peek
+                </GradientButton>
                 <GradientButton href="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010">
                   Get your copy
                 </GradientButton>
               </div>
             </div>
           </div>
+          <TestimonialSticker
+            author="Reader"
+            subtitle='"Best investment! I especially loved the Admin Commands project."'
+            right="30%"
+            top="15%"
+          ></TestimonialSticker>
           <img
             id="Book"
             src="/bookfrontcover.jpg"
@@ -49,15 +58,24 @@ function Book() {
           <InfoBlock
             title="Learn Faster with Vocabulary Lists"
             text="After each chapter, you'll find a sleek vocabulary list that gathers all the key terms in one place for easy reference. Plus, every word includes plenty of examples to help you understand and remember them faster."
-            buttonText="Order now"
+            buttonText="Get your copy"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageSrc="/book_pic_vocab.jpg"
             imageOnLeft={false}
+            testimonial={
+              <TestimonialSticker
+                author="E-Book Reader"
+                subtitle={`"Goes above and beyond than the other books I've seen around here in kindle."`}
+                isRelative
+                width="70%"
+                margin-bottom="3rem"
+              ></TestimonialSticker>
+            }
           />
           <InfoBlock
             title="Annotated Code to Help You Understand"
             text="The book features clear, annotated code and straightforward explanations that simplify Roblox scripting. Whether you're new to programming or just starting out, you'll easily understand the basics and quickly advance your coding skills. This approach makes learning Roblox scripting fun and accessible, helping you build your games with confidence!"
-            buttonText="Order now"
+            buttonText="Get your copy"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageSrc="/book_pic_4.jpeg"
             imageOnLeft={true}
@@ -65,15 +83,24 @@ function Book() {
           <InfoBlock
             title="Practice Quizzes, Vocabulary and Learning Exercises"
             text="Unlock your full potential in Roblox scripting with a variety of fun quizzes, essential vocabulary lists, and interactive exercises. Every feature is thoughtfully designed to strengthen your understanding and help you master scripting quickly and effectively. Dive in and take your skills to the next level!"
-            buttonText="Order now"
+            buttonText="Get your copy"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageSrc="/book_pic_3.jpg"
             imageOnLeft={false}
+            testimonial={
+              <TestimonialSticker
+                author="E-Book Reader"
+                subtitle={`"So far it's been a fun read. Quite satisfied with the product so far."`}
+                isRelative
+                width="70%"
+                margin-bottom="3rem"
+              ></TestimonialSticker>
+            }
           />
           <InfoBlock
             title="Transform Your Knowledge into Admin Commands!"
             text="In Chapter 10, you'll complete your journey with an exciting hands-on project: a step-by-step guide to creating your very own Admin Commands in Roblox. This project combines all the skills and techniques you've learned, letting you apply your knowledge and build something truly awesome!"
-            buttonText="Order now"
+            buttonText="Get your copy"
             imageSrc="/book_admin.jpeg"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageOnLeft={true}
@@ -106,7 +133,7 @@ function Book() {
                 ideas into reality with his expert guidance and support!
               </p>
             }
-            buttonText="Order book"
+            buttonText="Get your copy"
             imageSrc="/KushalProfile2.png"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageOnLeft={false}
