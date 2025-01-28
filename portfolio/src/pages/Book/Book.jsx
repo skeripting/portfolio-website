@@ -23,7 +23,7 @@ function Book() {
                 scripting simple and enjoyable.
               </p>
               <div className="buttons-flex">
-                <GradientButton href="https://kushaltimsina.com/book/BeginnersGuideToScriptingPreview.pdf">
+                <GradientButton href="https://kushaltimsina.com/book_urls/BeginnersGuideToScriptingPreview.pdf">
                   Take a peek
                 </GradientButton>
                 <GradientButton href="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010">
