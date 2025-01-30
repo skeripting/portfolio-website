@@ -34,7 +34,9 @@
   max-width: 337px; /* Prevent items from exceeding this width */
   height: auto; /* Allow height to be defined by content */
   margin: 1rem; /* Add spacing between items */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .experience-date,
   .about-experience {
     margin-top: 1rem;

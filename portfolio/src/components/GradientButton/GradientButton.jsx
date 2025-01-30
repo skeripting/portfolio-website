@@ -1,16 +1,9 @@
 import "./GradientButton.scss";
 function GradientButton(props) {
   return (
-    <button
-      className="gradient-button"
-      href={props.href}
-      style={props.style}
-      onClick={() => {
-        window.location.href = props.href;
-      }}
-    >
+    <a className="gradient-button" href={props.href} style={props.style}>
       {props.children}
-    </button>
+    </a>
   );
 }
 

@@ -17,7 +17,7 @@ function Sticker(props) {
         "min-height": props["min-height"],
       }}
     >
-      <div className="sticker-content">
+      <a className="sticker-content" href={props.ctaHref}>
         {props.icon && (
           <img
             className="sticker-icon"
@@ -39,7 +39,24 @@ function Sticker(props) {
 
         <h5 className="sticker-header">{props.header}</h5>
         <p className="sticker-subtitle">{props.subtitle}</p>
-      </div>
+        {props.ctaText && (
+          <div className="sticker-cta-text-cover">
+            <a className="sticker-cta-text">{props.ctaText}</a>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z"
+                fill="#160042"
+              />
+            </svg>
+          </div>
+        )}
+      </a>
     </div>
   );
 }

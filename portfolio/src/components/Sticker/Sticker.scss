@@ -26,6 +26,13 @@ $padding: 5px;
     figure {
       margin: 0;
     }
+    text-decoration: none !important;
+    color: #160042;
+    .sticker-cta-text-cover {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+    }
     .sticker-icon {
       width: 174px;
       height: 174px;
