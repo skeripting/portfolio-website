@@ -1,6 +1,8 @@
 import GradientButton from "../../components/GradientButton/GradientButton";
 import GradientText from "../../components/GradientText/GradientText";
+import KitForm from "../../components/KitForm/KitForm";
 import Sticker from "../../components/Sticker/Sticker";
+import useScript from "../../hooks/useScript";
 import "./Home.scss";
 
 function Home() {
@@ -18,10 +20,11 @@ function Home() {
               <p>
                 I create immersive <strong>games</strong> for millions worldwide
                 and write innovative <strong>software</strong> aimed at solving
-                real-world problems. I'm also passionate about teaching
+                real-world problems. I'm also passionate about teaching Roblox
                 scripting, helping others bring their ideas to life and
                 empowering the next generation of developers.
               </p>
+
               <div className="buttons-flex">
                 <GradientButton href="mailto:kushal@kushaltimsina.com">
                   Email me
@@ -73,6 +76,10 @@ function Home() {
           </div>
         </div>
         <div className="sections">
+          <div className="kit-form-cover">
+            <KitForm></KitForm>
+          </div>
+
           <section id="how-can-i-help">
             <h1>How Can I Help You?</h1>
             <div className="showcase">

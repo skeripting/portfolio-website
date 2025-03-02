@@ -89,7 +89,15 @@
     display: flex;
     flex-direction: column;
     gap: 5rem;
-
+    .kit-form-cover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      span {
+        font-weight: 500;
+      }
+    }
     section {
       display: flex;
       flex-direction: column;

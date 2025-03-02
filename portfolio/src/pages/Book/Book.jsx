@@ -13,14 +13,8 @@ function Book() {
             <div className="book-left-cover">
               <h1>Roblox Scripting Book</h1>
               <p>
-                If you've ever dreamt of scripting your own games, The
-                Beginner's Guide to Roblox Scripting book is your perfect
-                starting point! This easy-to-follow book breaks down the
-                fundamentals of Roblox scripting and includes hands-on practice
-                assignments, essential vocabulary lists, fun quizzes, and
-                exciting challenges. Whether you're just starting out or looking
-                to sharpen your skills, this guide makes learning Roblox
-                scripting simple and enjoyable.
+                If you've ever dreamt of scripting your own Roblox games, check
+                out my book, The Beginner's Guide to Roblox Scripting.
               </p>
               <div className="buttons-flex">
                 <GradientButton href="https://kushaltimsina.com/book_urls/BeginnersGuideToScriptingPreview.pdf">
