@@ -4,6 +4,9 @@ import TestimonialSticker from "../../components/TestimonialSticker/TestimonialS
 import "./Book.scss";
 
 function Book() {
+  const currentYear = new Date().getFullYear();
+  const numYears = currentYear - 2016;
+  const startYear = 2011;
   return (
     <div className="book-page">
       <div className="background-cover">
@@ -105,30 +108,47 @@ function Book() {
             title="Meet the Author, Kushal"
             text={
               <p>
-                Kushal Timsina is a passionate game developer, software
-                engineer, author, and educator committed to empowering the next
-                generation of creators. Currently pursuing a degree in Computer
-                Science, Kushal specializes in Roblox game development,
-                full-stack web development, and instructional programming. With
-                years of hands-on experience, he has authored numerous YouTube
-                guides, live classes, online courses, and in-person educational
-                sessions that simplify complex coding concepts, making Roblox
-                scripting accessible to aspiring developers of all ages.{" "}
-                <br></br>
-                <br></br>Kushal believes in the transformative power of
-                education and strives to make learning coding both easy and
-                enjoyable. Whether you're a beginner eager to dive into Roblox
-                scripting or an experienced developer seeking deeper insights,
-                his work provides invaluable knowledge and practical skills to
-                help you succeed. His dedication to teaching and continuous
-                learning has earned him a trusted reputation in the game
-                development and programming communities.<br></br>
-                <br></br>Join Kushal on your coding journey and turn your game
-                ideas into reality with his expert guidance and support!
+                Hi! I'm Kushal. I'm a 4th year computer science student that
+                also happens to <strong>love</strong> scripting on Roblox! I've
+                been playing games on the platform since
+                {" " + startYear}, and have been scripting for the last{" "}
+                {numYears} years. I have helped 1,000,000+ total views
+                <a
+                  href="https://www.youtube.com/channel/UCFHJ80WbXDJ7ujsMKa1LHtw/"
+                  style={{ textDecoration: "none", color: "#A172FF" }}
+                >
+                  {" "}
+                  learn to script on YouTube
+                </a>{" "}
+                since 2016, and have{" "}
+                <a
+                  href="/experience"
+                  style={{ textDecoration: "none", color: "#A172FF" }}
+                >
+                  released my own game on Roblox
+                </a>
+                , played 1,600,000+ times. I have also written{" "}
+                <a
+                  href="/book"
+                  style={{ textDecoration: "none", color: "#A172FF" }}
+                >
+                  a book on Roblox Scripting
+                </a>
+                . Since 2022, I've been helping kids 7-14 learn programming and
+                Roblox scripting part-time, and recently, I've been writing
+                educational articles about computer science and teaching Roblox
+                scripting on{" "}
+                <a
+                  href="/blog"
+                  style={{ textDecoration: "none", color: "#A172FF" }}
+                >
+                  my blog
+                </a>
+                .
               </p>
             }
             buttonText="Get your copy"
-            imageSrc="/KushalProfile2.png"
+            imageSrc="/instagramPhoto.jpg"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageOnLeft={false}
           />

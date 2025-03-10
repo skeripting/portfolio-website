@@ -44,8 +44,9 @@ function Home() {
               left="-25%"
               top="-25%"
               header="BattleMania"
-              subtitle="1.4M+ Plays"
+              subtitle="1,500,000+ Plays"
               icon="/BattleManiaLogoHD.png"
+              ctaHref="https://www.roblox.com/games/14945130763/BattleMania"
             ></Sticker>
             <Sticker
               id="QuizzySticker"
@@ -56,23 +57,26 @@ function Home() {
               logoWidth="127px"
               logoHeight="127px"
               header="Quizzy"
-              subtitle="400+ Users"
+              subtitle="700+ Users"
               icon="/QuizzyIconFull.png"
+              ctaHref="https://quizzynow.com/"
             ></Sticker>
-            <img
-              id="Book"
-              src="/bookfrontcover.jpg"
-              alt="Kushal's book, Unofficial Beginner's Guide to Roblox Scripting"
-              width="243px"
-              height="320px"
-              style={{
-                borderRadius: "20px",
-                position: "absolute",
-                left: "65%",
-                filter: "drop-shadow(0px 3px 6px rgb(0, 0, 0, 0.16))",
-                transform: "translateZ(0)",
-              }}
-            ></img>
+            <a href="/book">
+              <img
+                id="Book"
+                src="/bookfrontcover.jpg"
+                alt="Kushal's book, Unofficial Beginner's Guide to Roblox Scripting"
+                width="243px"
+                height="320px"
+                style={{
+                  borderRadius: "20px",
+                  position: "absolute",
+                  left: "65%",
+                  filter: "drop-shadow(0px 3px 6px rgb(0, 0, 0, 0.16))",
+                  transform: "translateZ(0)",
+                }}
+              ></img>
+            </a>
           </div>
         </div>
         <div className="sections">

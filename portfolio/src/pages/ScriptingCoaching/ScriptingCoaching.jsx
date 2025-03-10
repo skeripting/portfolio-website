@@ -1,5 +1,6 @@
 import MeetKushal from "../../components/MeetKushal/MeetKushal";
 import PlanCard from "../../components/PlanCard/PlanCard";
+import TestimonialSticker from "../../components/TestimonialSticker/TestimonialSticker";
 import YoutubeEmbed from "../../components/YouTubeEmbed/YouTubeEmbed";
 import "./ScriptingCoaching.scss";
 
@@ -7,6 +8,26 @@ function ScriptingCoaching() {
   return (
     <div className="coaching-page">
       <div className="background-cover">
+        <div className="testimonials" id="testimonials-top">
+          <TestimonialSticker
+            author="Client"
+            subtitle={
+              '"Thanks bro was really well and clear how you explained everything 🙂"'
+            }
+            isRelative
+            width="70%"
+            margin-bottom="3rem"
+          ></TestimonialSticker>
+          <TestimonialSticker
+            author="Client"
+            subtitle={
+              '"5/5. You brilliantly answered any and all of my questions, while giving examples and practical use examples. I\'ll definitely will be purchasing some more time here very soon"'
+            }
+            isRelative
+            width="70%"
+            margin-bottom="3rem"
+          ></TestimonialSticker>
+        </div>
         <div className="coaching-top-cover">
           <h1>1-1 Roblox Scripting Coaching</h1>
           <p className="coaching-subtitle">
@@ -160,6 +181,33 @@ function ScriptingCoaching() {
           </p>
           <MeetKushal></MeetKushal>
         </div>
+        <div className="testimonials">
+          <TestimonialSticker
+            author="Fiverr Client"
+            subtitle={
+              '"Amazing seller! Very knowledgeable and was willing to work with me through a very confusing problem that I first contacted him about regarding my game."'
+            }
+            isRelative
+            width="70%"
+            margin-bottom="3rem"
+          ></TestimonialSticker>
+          <TestimonialSticker
+            author="Client"
+            subtitle={"“You need a job done right, come to script_ing!”"}
+            isRelative
+            width="70%"
+            margin-bottom="3rem"
+          ></TestimonialSticker>
+          <TestimonialSticker
+            author="Client"
+            subtitle={
+              "\"bro no joke you're like one of the best scripters I've met. no wonder you're in cs\""
+            }
+            isRelative
+            width="70%"
+            margin-bottom="3rem"
+          ></TestimonialSticker>
+        </div>
         <div className="plans">
           <PlanCard
             name="Premium Scripting Coaching"
@@ -173,6 +221,7 @@ function ScriptingCoaching() {
             ]}
           ></PlanCard>
         </div>
+
         <div className="coaching-faq">
           <h1>Frequently Asked Questions (FAQ)</h1>
           <div className="coaching-faq-cover">

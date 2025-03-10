@@ -59,6 +59,14 @@
         filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.16));
       }
 
+      .sticker,
+      #Book {
+        cursor: pointer;
+        transition: all 0.1s;
+        &:hover {
+          transform: translateZ(0px) scale(1.03) !important;
+        }
+      }
       @media screen and (max-width: 1200px), (max-height: 820px) {
         transform: scale(0.7);
       }

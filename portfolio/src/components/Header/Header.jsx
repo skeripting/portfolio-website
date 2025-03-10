@@ -1,43 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import ClickableText from "../ClickableText/ClickableText";
 import "./Header.scss";
 
 function Header() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false); // State to toggle menu
 
   return (
     <div className="header">
-      <div className="header-center">
+      {/* Hamburger Icon for Mobile */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </div>
+
+      {/* Navigation Links */}
+      <div className={`header-center ${isOpen ? "open" : ""}`}>
         <ClickableText
           text="Home"
-          active={location.pathname === "/" ? "1" : "0"}
+          active={location.pathname === "/"}
           href="/"
-        ></ClickableText>
+        />
         <ClickableText
           text="Experience"
-          active={
-            location.pathname === "/" && location.hash === "#experience"
-              ? "1"
-              : "0"
-          }
+          active={location.pathname === "/experience"}
           href="/experience"
-        ></ClickableText>
+        />
         <ClickableText
           text="Coaching"
-          active={location.hash === "/coaching" ? "1" : "0"}
+          active={location.pathname === "/coaching"}
           href="/coaching"
-        ></ClickableText>
+        />
         <ClickableText
           text="Book"
-          active={location.pathname === "/book" ? "1" : "0"}
+          active={location.pathname === "/book"}
           href="/book"
-        ></ClickableText>
+        />
         <ClickableText
           text="Blog"
-          active={location.hash === "/blog" ? "1" : "0"}
+          active={location.pathname === "/blog"}
           href="/blog"
-        ></ClickableText>
+        />
       </div>
     </div>
   );
