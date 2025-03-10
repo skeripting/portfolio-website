@@ -24,6 +24,11 @@ function Header() {
           href="/experience"
         ></ClickableText>
         <ClickableText
+          text="Coaching"
+          active={location.hash === "/coaching" ? "1" : "0"}
+          href="/coaching"
+        ></ClickableText>
+        <ClickableText
           text="Book"
           active={location.pathname === "/book" ? "1" : "0"}
           href="/book"

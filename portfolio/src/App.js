@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import Book from "./pages/Book/Book";
 import Experience from "./pages/Experience/Experience";
+import ScriptingCoaching from "./pages/ScriptingCoaching/ScriptingCoaching";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/book" element={<Book />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/coaching" element={<ScriptingCoaching />} />
           {/* Add more routes here as needed */}
         </Routes>
       </div>
