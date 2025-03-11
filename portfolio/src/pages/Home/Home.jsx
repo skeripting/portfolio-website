@@ -2,7 +2,6 @@ import GradientButton from "../../components/GradientButton/GradientButton";
 import GradientText from "../../components/GradientText/GradientText";
 import KitForm from "../../components/KitForm/KitForm";
 import Sticker from "../../components/Sticker/Sticker";
-import useScript from "../../hooks/useScript";
 import "./Home.scss";
 
 function Home() {

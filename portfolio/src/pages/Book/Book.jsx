@@ -2,6 +2,7 @@ import GradientButton from "../../components/GradientButton/GradientButton";
 import InfoBlock from "../../components/InfoBlock/InfoBlock";
 import TestimonialSticker from "../../components/TestimonialSticker/TestimonialSticker";
 import "./Book.scss";
+import { Helmet } from "react-helmet-async";
 
 function Book() {
   const currentYear = new Date().getFullYear();
@@ -9,6 +10,9 @@ function Book() {
   const startYear = 2011;
   return (
     <div className="book-page">
+      <Helmet>
+        <title>The Beginner's Guide to Roblox Scripting Book</title>
+      </Helmet>
       <div className="background-cover">
         <div className="home-flex">
           <div className="home-hero-left">
@@ -16,8 +20,11 @@ function Book() {
             <div className="book-left-cover">
               <h1>Roblox Scripting Book</h1>
               <p>
-                If you've ever dreamt of scripting your own Roblox games, check
-                out my book, The Beginner's Guide to Roblox Scripting.
+                If you've ever felt like “I want to learn Roblox scripting, but
+                it's really confusing”, the Beginner's Guide to Roblox Scripting
+                is made for you. The book explains Roblox scripting concepts in
+                an easy to understand way that doesn't leave you lost after
+                every step.
               </p>
               <div className="buttons-flex">
                 <GradientButton href="https://kushaltimsina.com/book_urls/BeginnersGuideToScriptingPreview.pdf">
@@ -54,7 +61,7 @@ function Book() {
         <section className="about-book">
           <InfoBlock
             title="Learn Faster with Vocabulary Lists"
-            text="After each chapter, you'll find a sleek vocabulary list that gathers all the key terms in one place for easy reference. Plus, every word includes plenty of examples to help you understand and remember them faster."
+            text="Does it feel like scripters talk a different language? This book will help you learn to speak the language of scripters, with a vocabulary list at the end of each chapter. Plus, every word includes plenty of examples to help you understand and remember them faster."
             buttonText="Get your copy"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageSrc="/book_pic_vocab.jpg"
@@ -71,7 +78,7 @@ function Book() {
           />
           <InfoBlock
             title="Annotated Code to Help You Understand"
-            text="The book features clear, annotated code and straightforward explanations that simplify Roblox scripting. Whether you're new to programming or just starting out, you'll easily understand the basics and quickly advance your coding skills. This approach makes learning Roblox scripting fun and accessible, helping you build your games with confidence!"
+            text="Have you ever watched a tutorial and felt left behind? Lua U can seem like a very difficult language to understand for beginners. What in the world is a boolean variable!?! Luckily for you, with my 9 years of experience teaching scripting both online and in-person, I annotated every single line of code in this book with an easy to understand description of what it's doing."
             buttonText="Get your copy"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageSrc="/book_pic_4.jpeg"
@@ -79,7 +86,7 @@ function Book() {
           />
           <InfoBlock
             title="Practice Quizzes, Vocabulary and Learning Exercises"
-            text="Unlock your full potential in Roblox scripting with a variety of fun quizzes, essential vocabulary lists, and interactive exercises. Every feature is thoughtfully designed to strengthen your understanding and help you master scripting quickly and effectively. Dive in and take your skills to the next level!"
+            text="Does it ever feel like you're just watching tutorial after tutorial on YouTube and not learning anything? Don't waste your time! I wrote down quizzes and learning exercises inside of every chapter, so you can jump into Roblox Studio and immediately practice what you've learned."
             buttonText="Get your copy"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
             imageSrc="/book_pic_3.jpg"
@@ -96,7 +103,7 @@ function Book() {
           />
           <InfoBlock
             title="Transform Your Knowledge into Admin Commands!"
-            text="In Chapter 10, you'll complete your journey with an exciting hands-on project: a step-by-step guide to creating your very own Admin Commands in Roblox. This project combines all the skills and techniques you've learned, letting you apply your knowledge and build something truly awesome!"
+            text="It sucks to spend months watching tutorials and to not be able to script without them. The last chapter of this book shows you how you can script your own admin commands, line by line. The best part? The tutorial uses everything you learned in the previous chapters. So, you will not only be able to script your own Admin Commands, but will also be able to explain all the lines of code to your friends and family."
             buttonText="Get your copy"
             imageSrc="/book_admin.jpeg"
             buttonHref="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
@@ -144,7 +151,6 @@ function Book() {
                 >
                   my blog
                 </a>
-                .
               </p>
             }
             buttonText="Get your copy"
@@ -153,6 +159,58 @@ function Book() {
             imageOnLeft={false}
           />
         </section>
+        <div className="book-faq">
+          <h2>Frequently Asked Questions (FAQ)</h2>
+          <div className="book-faq-cover">
+            <div className="book-faq-content">
+              <p className="question">Q: What will I learn in the book?</p>
+              <p className="answer">
+                A: Just about everything you need to get started scripting.
+                <br></br>
+                <br></br>Some of the topics are: <br></br>✅ Variables
+                <br></br>✅ Functions <br></br>✅ If statements <br></br>✅ For
+                loops <br></br>
+                <br></br>And a lot more! 😊<br></br>
+                <br></br>The beauty of this book is in its explanations. While
+                most people will explain scripting concepts in the most
+                technical way possible, the book explains concepts in a way
+                that's easy to learn.
+              </p>
+            </div>
+            <div className="book-faq-content">
+              <p className="question">Q: Who is the book written for?</p>
+              <p className="answer">
+                A: The book is written for <strong>absolute beginners</strong>.
+                So, if you feel like you don't know anything about Roblox
+                scripting, and want to learn, it's <strong>perfect</strong> for
+                you.
+              </p>
+            </div>
+            <div className="book-faq-content">
+              <p className="question">
+                Q: This book only ships to US and Canada?
+              </p>
+              <p className="answer">
+                A: Yeah, there's not much we can do about that because of
+                shipping costs. Sorry about that! :(
+              </p>
+            </div>
+            <div className="book-faq-content">
+              <p className="question">
+                Q: Okay okay! I'm ready to buy! Where's the link?
+              </p>
+              <p className="answer">
+                A:{" "}
+                <a
+                  style={{ textDecoration: "none", color: "#A172FF" }}
+                  href="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
+                >
+                  Click me!
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

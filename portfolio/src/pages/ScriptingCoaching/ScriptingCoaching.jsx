@@ -171,9 +171,15 @@ function ScriptingCoaching() {
         <div className="what-is-online-coaching">
           <h1>What in the World is Online Coaching?</h1>
           <h3>This is you without Kushal.</h3>
-          <img src="withoutMe.png"></img>
+          <img
+            src="withoutMe.png"
+            alt="Trying to learn Roblox scripting without Kushal."
+          ></img>
           <h3>This is you with Kushal.</h3>
-          <img src="withMe.png"></img>
+          <img
+            src="withMe.png"
+            alt="Trying to learn Roblox scripting with Kushal."
+          ></img>
           <p className="caption">
             Lots of people waste insane amounts of time trying to do things
             solo. <br></br>

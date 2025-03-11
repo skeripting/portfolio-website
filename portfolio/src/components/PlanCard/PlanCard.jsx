@@ -1,5 +1,5 @@
 import GradientButton from "../GradientButton/GradientButton";
-import InfoBlock from "../InfoBlock/InfoBlock";
+
 import "./PlanCard.scss";
 
 function PlanCard(props) {

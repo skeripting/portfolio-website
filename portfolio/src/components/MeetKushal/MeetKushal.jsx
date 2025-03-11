@@ -1,4 +1,3 @@
-import InfoBlock from "../InfoBlock/InfoBlock";
 import "./MeetKushal.scss";
 
 function MeetKushal() {
@@ -8,7 +7,11 @@ function MeetKushal() {
   return (
     <section className="meet-kushal">
       <h3>Meet Kushal</h3>
-      <img src="/KushalProfile2.png" className="kushal-pic"></img>
+      <img
+        src="/KushalProfile2.png"
+        className="kushal-pic"
+        alt="Kushal, the author of the Beginner's Guide to Roblox Scripting."
+      ></img>
       <p>
         Hi! I'm Kushal. I'm a 4th year computer science student that also
         happens to <strong>love</strong> scripting on Roblox! I've been playing

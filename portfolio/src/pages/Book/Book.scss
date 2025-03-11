@@ -92,7 +92,28 @@
     width: 100%;
     background-color: $background-color;
   }
+  .book-faq {
+    background-color: #f2f7fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: black;
+    font-size: 18px;
+    .book-faq-cover {
+      display: flex;
+      flex-direction: column;
 
+      max-width: 50%;
+      .book-faq-content {
+        .question {
+          font-weight: 800;
+        }
+      }
+    }
+  }
   @media screen and (max-width: 1000px) {
     .home-flex {
       flex-direction: column;
