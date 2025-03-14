@@ -2,15 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start; // Prevents large empty spaces caused by varying heights
   gap: 10px; // Adds spacing between images
 
   img {
-    max-width: 100%; // Adjust as needed
+    max-width: 100%; // Ensures it doesn't overflow the parent
+    max-height: 400px; // Prevents excessive height while maintaining aspect ratio
     height: auto; // Maintains aspect ratio
     object-fit: contain; // Ensures the whole image fits without stretching
 
-    @media screen and (max-width: 1400px) {
-      max-width: 150px; // Reduce image size for smaller screens
+    @media screen and (max-width: 1000px) {
+      max-width: 90%; // Slightly shrink images on medium screens
+      max-height: 350px; // Reduce max height
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      max-height: 300px; // Further reduce max height for mobile devices
     }
   }
 }
