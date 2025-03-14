@@ -1,5 +1,6 @@
 import ExperienceGrid from "../../components/ExperienceGrid/ExperienceGrid";
 import GradientButton from "../../components/GradientButton/GradientButton";
+import TestimonialStack from "../../components/TestimonialStack/TestimonialStack";
 import TestimonialSticker from "../../components/TestimonialSticker/TestimonialSticker";
 import "./Experience.scss";
 
@@ -38,6 +39,11 @@ about regarding my game."'
         </div>
       </div>
       <ExperienceGrid></ExperienceGrid>
+
+      <h2 className="teaching-impact" style={{ marginTop: "30px" }}>
+        My Roblox Scripting Teaching Impact
+      </h2>
+      <TestimonialStack></TestimonialStack>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.testimonial-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; // Adds spacing between images
+
+  img {
+    max-width: 100%; // Adjust as needed
+    height: auto; // Maintains aspect ratio
+    object-fit: contain; // Ensures the whole image fits without stretching
+
+    @media screen and (max-width: 1400px) {
+      max-width: 150px; // Reduce image size for smaller screens
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import MeetKushal from "../../components/MeetKushal/MeetKushal";
 import PlanCard from "../../components/PlanCard/PlanCard";
+import TestimonialStack from "../../components/TestimonialStack/TestimonialStack";
 import TestimonialSticker from "../../components/TestimonialSticker/TestimonialSticker";
 import YoutubeEmbed from "../../components/YouTubeEmbed/YouTubeEmbed";
 import "./ScriptingCoaching.scss";
@@ -307,6 +308,8 @@ function ScriptingCoaching() {
               </p>
             </div>
           </div>
+          <h1>My Teaching Impact</h1>
+          <TestimonialStack></TestimonialStack>
         </div>
       </div>
     </div>

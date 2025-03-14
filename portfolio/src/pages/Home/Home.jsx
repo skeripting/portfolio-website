@@ -2,6 +2,7 @@ import GradientButton from "../../components/GradientButton/GradientButton";
 import GradientText from "../../components/GradientText/GradientText";
 import KitForm from "../../components/KitForm/KitForm";
 import Sticker from "../../components/Sticker/Sticker";
+import TestimonialStack from "../../components/TestimonialStack/TestimonialStack";
 import "./Home.scss";
 
 function Home() {
@@ -223,6 +224,10 @@ my blog."
                 <GradientButton href="/book">Get your copy</GradientButton>
               </div>
             </div>
+          </section>
+          <section className="my-impact">
+            <h1>My Teaching Impact</h1>
+            <TestimonialStack></TestimonialStack>
           </section>
         </div>
       </div>
