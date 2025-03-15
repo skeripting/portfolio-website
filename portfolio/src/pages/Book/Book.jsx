@@ -30,7 +30,7 @@ function Book() {
                 <GradientButton href="https://kushaltimsina.com/book_urls/BeginnersGuideToScriptingPreview.pdf">
                   Take a peek
                 </GradientButton>
-                <GradientButton href="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010">
+                <GradientButton href="https://buy.stripe.com/00gbKFf095iFan69AT">
                   Get your copy
                 </GradientButton>
               </div>
