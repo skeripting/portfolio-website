@@ -27,11 +27,14 @@ function Book() {
                 every step.
               </p>
               <div className="buttons-flex">
-                <GradientButton href="https://kushaltimsina.com/book_urls/BeginnersGuideToScriptingPreview.pdf">
+                {/*<GradientButton href="https://kushaltimsina.com/book_urls/BeginnersGuideToScriptingPreview.pdf">
                   Take a peek
-                </GradientButton>
+                </GradientButton>*/}
                 <GradientButton href="https://buy.stripe.com/00gbKFf095iFan69AT">
                   Get your copy
+                </GradientButton>
+                <GradientButton href="mailto:kushal@kushaltimsina.com">
+                  Contact me
                 </GradientButton>
               </div>
             </div>
