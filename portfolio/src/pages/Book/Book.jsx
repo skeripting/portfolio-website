@@ -31,10 +31,10 @@ function Book() {
                   Take a peek
                 </GradientButton>*/}
                 <GradientButton href="https://buy.stripe.com/00gbKFf095iFan69AT">
-                  Get your copy
+                  Buy paperback (US only)
                 </GradientButton>
-                <GradientButton href="mailto:kushal@kushaltimsina.com">
-                  Contact me
+                <GradientButton href="https://www.amazon.com/dp/B0CH3L33CV/ref=mp_s_a_1_1">
+                  Buy E-Book
                 </GradientButton>
               </div>
             </div>
@@ -206,9 +206,15 @@ function Book() {
                 A:{" "}
                 <a
                   style={{ textDecoration: "none", color: "#A172FF" }}
-                  href="https://www.barnesandnoble.com/w/unofficial-beginners-guide-to-roblox-scripting-kushal-timsina/1144181010"
+                  href="https://buy.stripe.com/00gbKFf095iFan69AT"
                 >
-                  Click me!
+                  Click me for the paperback version (US only)!
+                </a>
+                <a
+                  style={{ textDecoration: "none", color: "#A172FF" }}
+                  href="https://www.amazon.com/Unofficial-Beginners-Guide-Roblox-Scripting-ebook/dp/B0CH3L33CV/ref=mp_s_a_1_1?crid=1RFDJJOQ2JQYK&dib=eyJ2IjoiMSJ9.hb5foyEjBaBpp_XytUCyGtLCNc27P-jL1Q7u9GEc-BOEgMbNsNosFLcm6Ps-ayYMbiIY7unPJKzG-k9HeHk3ThUGKmEPkxaMycnb4C83oC9d04HyQQxpvCs6Ob7PKdpy8YCjH3reJNBwNMGxcGSoHsHwy5uw9ShHgOwrSXQYXV3YTjCUE49ktp_w1qcGThGrm196FuYV9GcLfdEzflrukA.Fa5_ElMgygP8J3UG7_99Nr-S2qPzHZDxV4aZjVwvwuY&dib_tag=se&keywords=beginners+guide+to+roblox+scripting&qid=1742831155&sprefix=beginners+guide+to+roblox+scripting%2Caps%2C107&sr=8-1"
+                >
+                  Click me for the E-book version (all countries)!
                 </a>
               </p>
             </div>
