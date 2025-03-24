@@ -33,7 +33,10 @@ function Book() {
                 <GradientButton href="https://buy.stripe.com/00gbKFf095iFan69AT">
                   Get the Paperback (US only)
                 </GradientButton>
-                <GradientButton href="https://www.amazon.com/dp/B0CH3L33CV/ref=mp_s_a_1_1">
+                {/*<GradientButton href="https://www.amazon.com/dp/B0CH3L33CV/ref=mp_s_a_1_1">
+                  Get the E-Book
+                </GradientButton>*/}
+                <GradientButton href="https://payhip.com/b/4v6YR">
                   Get the E-Book
                 </GradientButton>
               </div>
@@ -210,7 +213,7 @@ function Book() {
                 <br></br>
                 <a
                   style={{ textDecoration: "none", color: "#A172FF" }}
-                  href="https://www.amazon.com/Unofficial-Beginners-Guide-Roblox-Scripting-ebook/dp/B0CH3L33CV/ref=mp_s_a_1_1?crid=1RFDJJOQ2JQYK&dib=eyJ2IjoiMSJ9.hb5foyEjBaBpp_XytUCyGtLCNc27P-jL1Q7u9GEc-BOEgMbNsNosFLcm6Ps-ayYMbiIY7unPJKzG-k9HeHk3ThUGKmEPkxaMycnb4C83oC9d04HyQQxpvCs6Ob7PKdpy8YCjH3reJNBwNMGxcGSoHsHwy5uw9ShHgOwrSXQYXV3YTjCUE49ktp_w1qcGThGrm196FuYV9GcLfdEzflrukA.Fa5_ElMgygP8J3UG7_99Nr-S2qPzHZDxV4aZjVwvwuY&dib_tag=se&keywords=beginners+guide+to+roblox+scripting&qid=1742831155&sprefix=beginners+guide+to+roblox+scripting%2Caps%2C107&sr=8-1"
+                  href="https://payhip.com/b/4v6YR"
                 >
                   Click me for the E-book version (all countries)!
                 </a>
